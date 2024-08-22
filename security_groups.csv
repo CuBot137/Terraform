@@ -1,0 +1,140 @@
+GroupName,GroupId,Description,VpcId,Direction,IpProtocol,FromPort,ToPort,CidrIp
+ElasticMapReduce-slave,sg-04fd2718290ffd1d9,Slave group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Inbound,tcp,30093.0,30093.0,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Inbound,tcp,32080.0,32080.0,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Inbound,icmp,-1.0,-1.0,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Inbound,tcp,30091.0,30091.0,0.0.0.0/0
+launch-wizard-5,sg-0f38dd37ca8c70269,launch-wizard-5 created 2021-06-30T14:18:50.999+01:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+obs-cl-1732,sg-00212c712d1476bc6,2021-09-17T16:24:08.718Z,vpc-0d082942d4c109bfb,Inbound,tcp,80.0,80.0,0.0.0.0/0
+obs-cl-1732,sg-00212c712d1476bc6,2021-09-17T16:24:08.718Z,vpc-0d082942d4c109bfb,Inbound,tcp,443.0,443.0,0.0.0.0/0
+obs-cl-1732,sg-00212c712d1476bc6,2021-09-17T16:24:08.718Z,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,80.0,80.0,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,9095.0,9095.0,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,9094.0,9094.0,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,icmp,3.0,4.0,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,443.0,443.0,0.0.0.0/0
+k8s-elb-a105970643978429592138dee277033e,sg-023e5b0911093217e,Security group for Kubernetes ELB a105970643978429592138dee277033e (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+default,sg-02321cecfbe7b5139,default VPC security group,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+sgssh-new2,sg-065917e0dae9614c6,launch-wizard-7 created 2021-09-21T17:56:23.131+01:00,vpc-0d082942d4c109bfb,Inbound,tcp,22.0,22.0,0.0.0.0/0
+sgssh-new2,sg-065917e0dae9614c6,launch-wizard-7 created 2021-09-21T17:56:23.131+01:00,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+launch-wizard-3,sg-050f8543225723a87,launch-wizard-3 created 2021-06-28T11:11:10.101+01:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-3,sg-050f8543225723a87,launch-wizard-3 created 2021-06-28T11:11:10.101+01:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,30093.0,30093.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,8080.0,8080.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,10002.0,10002.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,32080.0,32080.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,32123.0,32123.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,icmp,-1.0,-1.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,31706.0,31706.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,30226.0,30226.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Inbound,tcp,30091.0,30091.0,0.0.0.0/0
+launch-wizard-4,sg-09ad9aaba89b468b4,launch-wizard-4 created 2021-06-29T12:10:29.876+01:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+project-planner-alb-sg,sg-034307966814fa3c9,project-planner-alb-sg,vpc-05ca7204d0891923a,Inbound,tcp,3000.0,3000.0,0.0.0.0/0
+project-planner-alb-sg,sg-034307966814fa3c9,project-planner-alb-sg,vpc-05ca7204d0891923a,Outbound,tcp,3000.0,3000.0,0.0.0.0/0
+f8e1bfcb-05a1-47bf-ad99-f9eac4f2a3ff,sg-03167d5d7b9691492,This is a test security group,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+f8e1bfcb-05a1-47bf-ad99-f9eac4f2a3ff,sg-03167d5d7b9691492,This is a test security group,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+f8e1bfcb-05a1-47bf-ad99-f9eac4f2a3ff,sg-03167d5d7b9691492,This is a test security group,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+rdp-sg,sg-0946864e8fc38016c,rdp sg created 2023-03-14T10:53:37.272Z,vpc-05ca7204d0891923a,Inbound,tcp,22.0,22.0,0.0.0.0/0
+rdp-sg,sg-0946864e8fc38016c,rdp sg created 2023-03-14T10:53:37.272Z,vpc-05ca7204d0891923a,Inbound,tcp,3389.0,3389.0,0.0.0.0/0
+rdp-sg,sg-0946864e8fc38016c,rdp sg created 2023-03-14T10:53:37.272Z,vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+eks-cluster-sg-path-finders-integration-1269856108,sg-043af5aa6548af198,"EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+k8s-worker-SG,sg-06cca4b66fd36e9fb,k8s-worker-SG,vpc-db5ea3a2,Inbound,tcp,30000.0,32767.0,172.31.0.0/16
+k8s-worker-SG,sg-06cca4b66fd36e9fb,k8s-worker-SG,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+k8s-worker-SG,sg-06cca4b66fd36e9fb,k8s-worker-SG,vpc-db5ea3a2,Inbound,tcp,10250.0,10250.0,172.31.0.0/16
+k8s-worker-SG,sg-06cca4b66fd36e9fb,k8s-worker-SG,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+launch-wizard-7,sg-0df0f46b1c86ce670,launch-wizard-7 created 2023-04-07T12:22:28.934Z,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-7,sg-0df0f46b1c86ce670,launch-wizard-7 created 2023-04-07T12:22:28.934Z,vpc-db5ea3a2,Inbound,tcp,443.0,443.0,0.0.0.0/0
+launch-wizard-7,sg-0df0f46b1c86ce670,launch-wizard-7 created 2023-04-07T12:22:28.934Z,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Inbound,tcp,80.0,80.0,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Inbound,tcp,3000.0,3000.0,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Inbound,tcp,443.0,443.0,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Outbound,tcp,80.0,80.0,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Outbound,tcp,3000.0,3000.0,0.0.0.0/0
+project-planner-ecs-sg,sg-09d02fbf9dc16ee22,project-planner-ecs-sg,vpc-05ca7204d0891923a,Outbound,tcp,443.0,443.0,0.0.0.0/0
+ElasticMapReduce-master,sg-0d700dfed95942dde,Master group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Inbound,tcp,8443.0,8443.0,87.238.84.64/29
+ElasticMapReduce-master,sg-0d700dfed95942dde,Master group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Inbound,tcp,8443.0,8443.0,54.239.99.0/24
+ElasticMapReduce-master,sg-0d700dfed95942dde,Master group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Inbound,tcp,8443.0,8443.0,87.238.80.64/29
+ElasticMapReduce-master,sg-0d700dfed95942dde,Master group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Inbound,tcp,8443.0,8443.0,54.240.197.0/24
+ElasticMapReduce-master,sg-0d700dfed95942dde,Master group for Elastic MapReduce created on 2022-01-27T20:00:15.150Z,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+k8s-elb-a674ac97a4038498caca9fd4312d48fe,sg-027d213b9e3af4b5e,Security group for Kubernetes ELB a674ac97a4038498caca9fd4312d48fe (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,80.0,80.0,0.0.0.0/0
+k8s-elb-a674ac97a4038498caca9fd4312d48fe,sg-027d213b9e3af4b5e,Security group for Kubernetes ELB a674ac97a4038498caca9fd4312d48fe (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,9094.0,9094.0,0.0.0.0/0
+k8s-elb-a674ac97a4038498caca9fd4312d48fe,sg-027d213b9e3af4b5e,Security group for Kubernetes ELB a674ac97a4038498caca9fd4312d48fe (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,icmp,3.0,4.0,0.0.0.0/0
+k8s-elb-a674ac97a4038498caca9fd4312d48fe,sg-027d213b9e3af4b5e,Security group for Kubernetes ELB a674ac97a4038498caca9fd4312d48fe (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,443.0,443.0,0.0.0.0/0
+k8s-elb-a674ac97a4038498caca9fd4312d48fe,sg-027d213b9e3af4b5e,Security group for Kubernetes ELB a674ac97a4038498caca9fd4312d48fe (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+e1be48ff-5734-4c22-9db5-eebd5b47e2f8,sg-05f196cbec0db5400,This is a test security group,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+e1be48ff-5734-4c22-9db5-eebd5b47e2f8,sg-05f196cbec0db5400,This is a test security group,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+e1be48ff-5734-4c22-9db5-eebd5b47e2f8,sg-05f196cbec0db5400,This is a test security group,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+default,sg-41498401,default VPC security group,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+launch-wizard-9,sg-0c5fa63657793d4fb,launch-wizard-9 created 2024-06-07T11:58:22.259Z,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-9,sg-0c5fa63657793d4fb,launch-wizard-9 created 2024-06-07T11:58:22.259Z,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+4750659c-2318-4cc2-bd1d-14ce662f324a,sg-0692ead4a9a84ca82,This is a test security group,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+4750659c-2318-4cc2-bd1d-14ce662f324a,sg-0692ead4a9a84ca82,This is a test security group,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+4750659c-2318-4cc2-bd1d-14ce662f324a,sg-0692ead4a9a84ca82,This is a test security group,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+SSH Public Access,sg-0332d993fb439bdc5,SSH Public Access,vpc-05ca7204d0891923a,Inbound,tcp,22.0,22.0,0.0.0.0/0
+SSH Public Access,sg-0332d993fb439bdc5,SSH Public Access,vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+SSH-SG,sg-00fa437a10d3d04fb,launch-wizard-1 created 2021-06-25T15:46:44.194+03:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+SSH-SG,sg-00fa437a10d3d04fb,launch-wizard-1 created 2021-06-25T15:46:44.194+03:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,445.0,445.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,138.0,138.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,464.0,464.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,464.0,464.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,389.0,389.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,53.0,53.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,389.0,389.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,123.0,123.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,445.0,445.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,icmp,-1.0,-1.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,3268.0,3269.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,1024.0,65535.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,88.0,88.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,135.0,135.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,636.0,636.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,tcp,53.0,53.0,0.0.0.0/0
+d-9367765dda_controllers,sg-09629669c19b75a7c,AWS created security group for d-9367765dda directory controllers,vpc-0a8e50d36f62e17b3,Inbound,udp,88.0,88.0,0.0.0.0/0
+d-9367765dda_workspacesMembers,sg-0e6cd74781e75dbc4,Amazon WorkSpaces Security Group,vpc-0a8e50d36f62e17b3,Outbound,-1,,,0.0.0.0/0
+postgresql-sg,sg-01faa9cc0826b369f,Created by RDS management console,vpc-0d082942d4c109bfb,Inbound,tcp,5432.0,5432.0,0.0.0.0/0
+postgresql-sg,sg-01faa9cc0826b369f,Created by RDS management console,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+SSH Access,sg-01301cc9429d87ca1,SSH Access,vpc-05ca7204d0891923a,Inbound,tcp,22.0,22.0,10.2.0.0/16
+SSH Access,sg-01301cc9429d87ca1,SSH Access,vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+k8s-elb-a91c5096db9c14822b33fb6d52ae51fc,sg-0b439099599681c2f,Security group for Kubernetes ELB a91c5096db9c14822b33fb6d52ae51fc (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,80.0,80.0,0.0.0.0/0
+k8s-elb-a91c5096db9c14822b33fb6d52ae51fc,sg-0b439099599681c2f,Security group for Kubernetes ELB a91c5096db9c14822b33fb6d52ae51fc (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,icmp,3.0,4.0,0.0.0.0/0
+k8s-elb-a91c5096db9c14822b33fb6d52ae51fc,sg-0b439099599681c2f,Security group for Kubernetes ELB a91c5096db9c14822b33fb6d52ae51fc (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Inbound,tcp,443.0,443.0,0.0.0.0/0
+k8s-elb-a91c5096db9c14822b33fb6d52ae51fc,sg-0b439099599681c2f,Security group for Kubernetes ELB a91c5096db9c14822b33fb6d52ae51fc (gloo-system/gateway-proxy),vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+launch-wizard-2,sg-01ef0c67478b77eca,launch-wizard-2 created 2021-06-28T10:03:53.793+01:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-2,sg-01ef0c67478b77eca,launch-wizard-2 created 2021-06-28T10:03:53.793+01:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+default,sg-022455b658e510e5e,default VPC security group,vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+launch-wizard-8,sg-06a1fbe3d0d38b203,launch-wizard-8 created 2024-06-07T11:56:21.113Z,vpc-db5ea3a2,Inbound,tcp,1433.0,1433.0,0.0.0.0/0
+launch-wizard-8,sg-06a1fbe3d0d38b203,launch-wizard-8 created 2024-06-07T11:56:21.113Z,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-8,sg-06a1fbe3d0d38b203,launch-wizard-8 created 2024-06-07T11:56:21.113Z,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,8080.0,8080.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,-1,,,172.31.0.0/16
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,-1,,,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,5000.0,5000.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,31376.0,31376.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Inbound,tcp,9990.0,9990.0,0.0.0.0/0
+DockerTraining,sg-0aa0836135118372b,Ports required for Docker Training Servers,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+default,sg-0c74f6e9b9a829fda,default VPC security group,vpc-0a8e50d36f62e17b3,Outbound,-1,,,0.0.0.0/0
+all-traffic-within-vpc,sg-03b24c02932536863,launch-wizard-7 created 2021-09-22T10:22:10.719+01:00,vpc-0d082942d4c109bfb,Inbound,tcp,0.0,65535.0,0.0.0.0/0
+all-traffic-within-vpc,sg-03b24c02932536863,launch-wizard-7 created 2021-09-22T10:22:10.719+01:00,vpc-0d082942d4c109bfb,Inbound,tcp,22.0,22.0,0.0.0.0/0
+all-traffic-within-vpc,sg-03b24c02932536863,launch-wizard-7 created 2021-09-22T10:22:10.719+01:00,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+271c7d1e-cf43-417b-bfc1-383d5224e863,sg-010c46fe3f0be9ca5,This is a test security group,vpc-db5ea3a2,Inbound,tcp,80.0,80.0,0.0.0.0/0
+271c7d1e-cf43-417b-bfc1-383d5224e863,sg-010c46fe3f0be9ca5,This is a test security group,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+271c7d1e-cf43-417b-bfc1-383d5224e863,sg-010c46fe3f0be9ca5,This is a test security group,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+obs-ecs-cluster-sg,sg-013fdc2fdef765475,alb to ecs cluster sg,vpc-0d082942d4c109bfb,Inbound,tcp,0.0,65535.0,10.0.0.0/16
+obs-ecs-cluster-sg,sg-013fdc2fdef765475,alb to ecs cluster sg,vpc-0d082942d4c109bfb,Outbound,-1,,,0.0.0.0/0
+garytest,sg-0f01655d7c3a13e43,garytest,vpc-05ca7204d0891923a,Inbound,-1,,,0.0.0.0/0
+garytest,sg-0f01655d7c3a13e43,garytest,vpc-05ca7204d0891923a,Outbound,-1,,,0.0.0.0/0
+launch-wizard-6,sg-0128b655df0df58ff,launch-wizard-6 created 2021-07-04T15:41:40.812+01:00,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+launch-wizard-6,sg-0128b655df0df58ff,launch-wizard-6 created 2021-07-04T15:41:40.812+01:00,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,10259.0,10259.0,172.31.0.0/16
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,6443.0,6443.0,172.31.0.0/16
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,2379.0,2380.0,172.31.0.0/16
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,22.0,22.0,0.0.0.0/0
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,10257.0,10257.0,172.31.0.0/16
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Inbound,tcp,10250.0,10252.0,172.31.0.0/16
+k8s-control-plane-SG,sg-0cf908758f5a1d3ae,k8s-control-plane-SG,vpc-db5ea3a2,Outbound,-1,,,0.0.0.0/0
