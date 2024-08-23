@@ -77,7 +77,7 @@ resource "aws_security_group" "instance_sg"{
       from_port = ingress.value.port
       to_port = ingress.value.port
       protocol = "tcp"
-      cidr_blocks = ["0.0.0.0/0"]
+      cidr_blocks = ["0.0.0.0/16"]
       description = "Allow inbound traffic on port ${ingress.value.port}"
     }
   }
