@@ -1,0 +1,8 @@
+.terraform/
+.terraform/
+conor-s-run-atlantis-app.2024-08-22.private-key.pem
+
+atlantis.var
+*.zip
+ngrok
+atlantis*
