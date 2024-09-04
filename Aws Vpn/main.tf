@@ -133,7 +133,7 @@ resource "aws_vpn_connection_route" "conor-vpn-route" {
   destination_cidr_block = "10.0.40.86/32"  # Replace with your on-premises network's CIDR block
 }
 
-# Update the Route Table to Route On-Premises Traffic through VPN asdf
+# Update the Route Table to Route On-Premises Traffic through VPN
 resource "aws_route" "vpn_route" {
   route_table_id         = aws_route_table.conor-route-table.id
   destination_cidr_block = ""  # Replace with your on-premises network's CIDR block
