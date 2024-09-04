@@ -120,7 +120,7 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
   vpn_gateway_id      = aws_vpn_gateway.conor-vpn-gateway.id
   type                = "ipsec.1"
 
-  static_routes_only = true  # Set to false if using dynamic routing (BGP)
+  static_routes_only = true  # Set to false if using dynamic routing (BGP)asdf
 
   tags = {
     Name = "conor-vpn-connection"
