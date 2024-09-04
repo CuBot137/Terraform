@@ -136,7 +136,7 @@ resource "aws_vpn_connection_route" "conor-vpn-route" {
 # Update the Route Table to Route On-Premises Traffic through VPN
 resource "aws_route" "vpn_route" {
   route_table_id         = aws_route_table.conor-route-table.id
-  destination_cidr_block = "255.255.240.0/0"  # Replace with your on-premises network's CIDR block
+  destination_cidr_block = ""  # Replace with your on-premises network's CIDR block
   gateway_id             = aws_vpn_gateway.conor-vpn-gateway.id
 }
 
