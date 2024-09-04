@@ -127,7 +127,7 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
   }
 }
 
-# Define a VPN Connection Route (if using static routing)
+# Define a VPN Connection Route (if using static routing)aasdfasdf
 resource "aws_vpn_connection_route" "conor-vpn-route" {
   vpn_connection_id      = aws_vpn_connection.conor-vpn-connection.id
   destination_cidr_block = "10.0.40.86/32"  # Replace with your on-premises network's CIDR block
