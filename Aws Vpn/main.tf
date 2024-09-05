@@ -77,23 +77,17 @@ resource "aws_security_group" "conor-security-group" {
   }
 }
 
-# Definie a KEY Pair
-resource "aws_key_pair" "conor-key-pair" {
-  key_name   = "conor-key-pair"
-  public_key = file("/home/mobaxterm/.ssh/id_rsa.pub")
-}
-
-
 # Define an EC2 Instance
 resource "aws_instance" "conor-instance" {
   ami           = "ami-04e49d62cf88738f1"  # Replace with the desired AMI ID
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.conor-subnet.id
   security_groups = [aws_security_group.conor-security-group.id]
-  key_name = aws_key_pair.conor-key-pair.key_name
+  key_name = "conor_vpn_test_pair"
 
   tags = {
     Name = "conor-VPN-test-instance"
+    Owner = "Shauna-Test-Tag"
   }
 }
 
