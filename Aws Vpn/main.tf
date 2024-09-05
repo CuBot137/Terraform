@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_vpc" "conor-VPC" {
   cidr_block = "10.0.0.0/16"
   tags = {
-    Name = "example-vpc"
+    Name = "conor-vpc"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_vpc" "conor-VPC" {
 resource "aws_internet_gateway" "conor-internet-gateway" {
   vpc_id = aws_vpc.conor-VPC.id
   tags = {
-    Name = "example-igw"
+    Name = "conor-igw"
   }
 }
 
@@ -34,7 +34,7 @@ resource "aws_subnet" "conor-subnet" {
   cidr_block        = "10.0.1.0/24"
   availability_zone = "eu-west-1a"  # Replace with your preferred availability zone
   tags = {
-    Name = "example-subnet"
+    Name = "conor-subnet"
   }
 }
 
@@ -46,7 +46,7 @@ resource "aws_route_table" "conor-route-table" {
     gateway_id = aws_internet_gateway.conor-internet-gateway.id
   }
   tags = {
-    Name = "example-route-table"
+    Name = "conor-route-table"
   }
 }
 
@@ -82,7 +82,8 @@ resource "aws_instance" "conor-instance" {
   ami           = "ami-04e49d62cf88738f1"  # Replace with the desired AMI ID
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.conor-subnet.id
-  security_groups = [aws_security_group.conor-security-group.name]
+  security_groups = [aws_security_group.conor-security-group.id]
+  key_name = "conor_vpn_test_pair"
 
   tags = {
     Name = "conor-VPN-test-instance"
@@ -122,7 +123,7 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
   vpn_gateway_id      = aws_vpn_gateway.conor-vpn-gateway.id
   type                = "ipsec.1"
 
-  static_routes_only = true  # Set to false if using dynamic routing (BGP)asdf
+  static_routes_only = true  # Set to false if using dynamic routing (BGP)asdasdfasdf
 
   tags = {
     Name = "conor-vpn-connection"
@@ -132,13 +133,13 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
 # Define a VPN Connection Route (if using static routing)
 resource "aws_vpn_connection_route" "conor-vpn-route" {
   vpn_connection_id      = aws_vpn_connection.conor-vpn-connection.id
-  destination_cidr_block = "10.0.40.86/32"  # Replace with your on-premises network's CIDR block
+  destination_cidr_block = "10.0.40.0/24"  # Replace with your on-premises network's CIDR block
 }
 
 # Update the Route Table to Route On-Premises Traffic through VPN asdf
 resource "aws_route" "vpn_route" {
   route_table_id         = aws_route_table.conor-route-table.id
-  destination_cidr_block = ""  # Replace with your on-premises network's CIDR block
+  destination_cidr_block = "255.255.255.0/24"  # Replace with your on-premises network's CIDR block
   gateway_id             = aws_vpn_gateway.conor-vpn-gateway.id
 }
 
