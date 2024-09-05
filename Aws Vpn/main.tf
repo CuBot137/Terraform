@@ -123,14 +123,14 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
   vpn_gateway_id      = aws_vpn_gateway.conor-vpn-gateway.id
   type                = "ipsec.1"
 
-  static_routes_only = true  # Set to false if using dynamic routing (BGP)asdasdfasdf
+  static_routes_only = true  # Set to false if using dynamic routing (BGP)
 
   tags = {
     Name = "conor-vpn-connection"
   }
 }
 
-# Define a VPN Connection Route (if using static routing)
+# Define a VPN Connection Route 
 resource "aws_vpn_connection_route" "conor-vpn-route" {
   vpn_connection_id      = aws_vpn_connection.conor-vpn-connection.id
   destination_cidr_block = "10.0.40.0/24"  # Replace with your on-premises network's CIDR block
