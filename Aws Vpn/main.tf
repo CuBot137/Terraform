@@ -73,6 +73,7 @@ resource "aws_security_group" "conor-security-group" {
   }
   tags = {
     Name = "conor-security-group"
+    
   }
 }
 
@@ -85,6 +86,7 @@ resource "aws_instance" "conor-instance" {
 
   tags = {
     Name = "conor-VPN-test-instance"
+    Owner = "Shauna-Test-Tag"
   }
 }
 
