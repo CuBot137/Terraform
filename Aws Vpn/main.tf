@@ -99,6 +99,7 @@ resource "aws_customer_gateway" "conor-customer-gateway" {
 
   tags = {
     Name = "conor-customer-gateway"
+    Owner = "Shauna-New-Test-Tag"
   }
 }
 
