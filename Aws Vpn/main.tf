@@ -32,7 +32,7 @@ resource "aws_internet_gateway" "conor-internet-gateway" {
 resource "aws_subnet" "conor-subnet" {
   vpc_id            = aws_vpc.conor-VPC.id
   cidr_block        = "10.0.1.0/24"
-  availability_zone = "eu-west-1a"  # Replace with your preferred availability zone
+  availability_zone = "eu-west-1a" 
   tags = {
     Name = "conor-subnet"
   }
@@ -79,7 +79,7 @@ resource "aws_security_group" "conor-security-group" {
 
 # Define an EC2 Instance
 resource "aws_instance" "conor-instance" {
-  ami           = "ami-04e49d62cf88738f1"  # Replace with the desired AMI ID
+  ami           = "ami-04e49d62cf88738f1"  
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.conor-subnet.id
   security_groups = [aws_security_group.conor-security-group.id]
@@ -124,7 +124,7 @@ resource "aws_vpn_connection" "conor-vpn-connection" {
   vpn_gateway_id      = aws_vpn_gateway.conor-vpn-gateway.id
   type                = "ipsec.1"
 
-  static_routes_only = true  # Set to false if using dynamic routing (BGP) 
+  static_routes_only = true
 
   tags = {
     Name = "conor-vpn-connection"
